@@ -1,0 +1,6 @@
+github.com/go-chi/chi/v5 v5.5.0 h1:xdKQ1dJmVJsmgahrXSKhUx8NyVPzpwdlyrrQFpMPJgg=
+github.com/go-chi/chi/v5 v5.5.0/go.mod h1:d1IG7GtKPSjPyBP365PH8sAGVHk3qfB/IhjFNRH1wWM=
+github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
+github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+go.rtnl.ai/x v1.23.0 h1:n3f6jozXoawClDQdWn6jvqoS0Xhm4127p/3zSHJPpQc=
+go.rtnl.ai/x v1.23.0/go.mod h1:VAJw2KnYzfB1oL89TNung8joaN8ug7Xc9vn6fOu1rSY=
