@@ -36,9 +36,14 @@ func (a *application) run(r http.Handler) error {
 }
 
 type application struct {
-	config configuration
+	config   configuration
+	dbConfig dbConfig
 }
 
 type configuration struct {
 	address string
+}
+
+type dbConfig struct {
+	dsn string
 }
