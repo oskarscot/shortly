@@ -7,14 +7,16 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/oskarscot/shortly/internal/link"
+	"github.com/oskarscot/shortly/internal/postgres"
+	repo "github.com/oskarscot/shortly/internal/postgres/sqlc"
 )
 
-func (a *application) mount() http.Handler {
+func (a *application) mount(db repo.DBTX) http.Handler {
 	r := chi.NewRouter()
 
 	r.Use(middleware.Logger)
 
-	linkRepo := link.NewMemoryRepository()
+	linkRepo := postgres.NewLinkRepository(db)
 	linkSvc := link.NewService(linkRepo)
 	linkHandler := link.NewHandler(*linkSvc)
 
