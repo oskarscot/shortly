@@ -4,7 +4,23 @@ A simple URL shortener built to learn Go backend development.
 
 Requires Go 1.26 or later.
 
+Prerequisites:
+ - Goose for migrations
+ - sqlc for schema generation
+
 Build and run from the project root:
+
+First generate postgres models by running
+```sh
+sqlc generate
+```
+
+Then run the migrations
+```sh
+goose up
+```
+
+Lastly build and run
 
 ```sh
 go build -o shortly ./cmd
